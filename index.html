@@ -8,5 +8,46 @@
     <script src="script.js"></script>
     <title>TicTacToe</title>
   </head>
-  <body></body>
+  <body id="body">
+    <div id="win" class="winner d-none">
+      <h1 id="h1"></h1>
+      <h3>hat Gewonnen!</h3>
+      <button onclick="location.reload()" class="btn">Neu laden</button>
+    </div>
+
+    <div id="change-stripe" class="stripe d-none"></div>
+
+    <table>
+      <tr>
+        <td id="td0" onclick="getField('td0')"></td>
+        <td id="td1" onclick="getField('td1')"></td>
+        <td id="td2" onclick="getField('td2')"></td>
+      </tr>
+      <tr>
+        <td id="td3" onclick="getField('td3')"></td>
+        <td id="td4" onclick="getField('td4')"></td>
+        <td id="td5" onclick="getField('td5')"></td>
+      </tr>
+      <tr>
+        <td id="td6" onclick="getField('td6')"></td>
+        <td id="td7" onclick="getField('td7')"></td>
+        <td id="td8" onclick="getField('td8')"></td>
+      </tr>
+    </table>
+
+    <footer>
+      <div id="playerX" class="playerX player-background">
+        <img class="cross_img" src="img/x.png" />
+      </div>
+      <p>
+        icons by
+        <a target="_blank" href="https://icons8.com" style="color: yellow"
+          >Icons8</a
+        >
+      </p>
+      <div id="playerO" class="playerO">
+        <img class="circle_img" src="img/circle.png" />
+      </div>
+    </footer>
+  </body>
 </html>
